@@ -1,0 +1,38 @@
+body {
+    font-family: 'DotGothic16', sans-serif;
+    padding:30px;
+    margin:0;
+
+}
+img { 
+    
+    height: 250px;
+    width: 250px;
+    object-fit:contain;
+ }
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 1060px) {
+
+    }
+    @media (min-device-width:600px) {
+        img[data-src-600px] {
+            content: attr(data-src-600px, url);
+        }
+    }
+    
+    @media (min-device-width:800px) {
+        img[data-src-800px] {
+            content: attr(data-src-800px, url);
+        }
+    }
+
+    .container-cart {
+        display: grid;
+        grid-template-columns: auto ;
+        grid-column-gap: 30px;
+        padding: 10px;
+    }
